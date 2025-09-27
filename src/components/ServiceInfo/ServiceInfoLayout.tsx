@@ -1,19 +1,17 @@
 import {
-  type CompanyInfo,
-  CompanyInfoCard,
+  type ServiceInfo,
+  ServiceInfoCard,
 } from "@/components/ServiceInfo/ServiceInfoCard";
-import { Button } from "@/components/ui/button";
 
-export function CompanyInfoLayout(props: { companyInfos: CompanyInfo[] }) {
+export function ServiceInfoLayout(props: { serviceInfos: ServiceInfo[] }) {
   return (
-    <>
-      <div className="container my-20 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {props.companyInfos.map((info, index) => (
-          <CompanyInfoCard key={index} companyInfo={info} />
+    <div className="mx-auto w-full max-w-6xl px-4">
+      <h2 className="text-2xl font-semibold">Our Services</h2>
+      <div className="container my-12 grid gap-8 md:grid-cols-3">
+        {props.serviceInfos.map((info, index) => (
+          <ServiceInfoCard key={index} serviceInfo={info} />
         ))}
       </div>
-
-      <Button variant="default">Contact us</Button>
-    </>
+    </div>
   );
 }
