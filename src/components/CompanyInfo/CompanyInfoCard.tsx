@@ -1,4 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { cn } from "@/lib/utils";
 
 export interface CompanyInfo {
   title: string;
@@ -10,7 +11,7 @@ export function CompanyInfoCard(
   },
 ) {
   return (
-    <Card className={props.className}>
+    <Card className={cn(props.className, "hover:ring-2 transition")}>
       <CardHeader>
         <CardTitle>{props.title}</CardTitle>
       </CardHeader>

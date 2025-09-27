@@ -28,5 +28,10 @@ export function ProjectInfoLayout() {
     },
   ];
 
-  return <FocusCards cards={cards} className="mt-12" />;
+  return (
+    <div className="mx-auto w-full max-w-6xl">
+      <h2 className="text-2xl font-semibold">Our Services</h2>
+      <FocusCards cards={cards} className="mt-4 mb-16" />
+    </div>
+  );
 }

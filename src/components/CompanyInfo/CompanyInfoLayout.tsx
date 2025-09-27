@@ -34,15 +34,18 @@ const companyInfos: CompanyInfo[] = [
 ];
 export function CompanyInfoLayout() {
   return (
-    <div className="max-w-6xl w-full mx-auto my-16 grid gap-4 md:grid-cols-3">
-      {companyInfos.map((info, index) => (
-        <CompanyInfoCard
-          key={index}
-          {...info}
-          // hybrid layout for cards
-          className={cn(`col-span-${[1, 2, 2, 1][index % 4]}`)}
-        />
-      ))}
+    <div className="mx-auto w-full max-w-6xl">
+      <h2 className="text-2xl font-semibold">Our Services</h2>
+      <div className="max-w-6xl w-full mx-auto mt-4 mb-16 grid gap-4 md:grid-cols-3">
+        {companyInfos.map((info, index) => (
+          <CompanyInfoCard
+            key={index}
+            {...info}
+            // hybrid layout for cards
+            className={cn(`col-span-${[1, 2, 2, 1][index % 4]}`)}
+          />
+        ))}
+      </div>
     </div>
   );
 }
