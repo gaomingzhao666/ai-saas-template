@@ -28,5 +28,5 @@ export function ProjectInfoLayout() {
     },
   ];
 
-  return <FocusCards cards={cards} />;
+  return <FocusCards cards={cards} className="mt-12" />;
 }
