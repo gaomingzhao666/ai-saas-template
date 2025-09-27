@@ -1,15 +1,13 @@
 "use client";
-import { cn } from "@/lib/utils";
 import { IconMenu2, IconX } from "@tabler/icons-react";
 import {
-  motion,
   AnimatePresence,
-  useScroll,
+  motion,
   useMotionValueEvent,
+  useScroll,
 } from "motion/react";
-
 import React, { useRef, useState } from "react";
-
+import { cn } from "@/lib/utils";
 
 interface NavbarProps {
   children: React.ReactNode;
@@ -242,7 +240,7 @@ export const NavbarLogo = () => {
         width={30}
         height={30}
       />
-      <span className="font-medium text-black dark:text-white">Startup</span>
+      <span className="text-black dark:text-white">Logo</span>
     </a>
   );
 };

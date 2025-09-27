@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import { useState } from "react";
 import { ThemeToggle } from "@/components/Theme/ThemeToggle";
 import {
@@ -16,16 +17,16 @@ import {
 export function HomeNavbar() {
   const navItems = [
     {
-      name: "Features",
-      link: "#features",
+      name: "Home",
+      link: "#",
     },
     {
-      name: "Pricing",
-      link: "#pricing",
+      name: "Blog",
+      link: "#blog",
     },
     {
-      name: "Contact",
-      link: "#contact",
+      name: "Recruit",
+      link: "#recruit",
     },
   ];
 
@@ -42,7 +43,9 @@ export function HomeNavbar() {
             <NavbarButton variant="secondary">
               <ThemeToggle />
             </NavbarButton>
-            <NavbarButton variant="primary">Book a call</NavbarButton>
+            <Link href="#contact">
+              <NavbarButton variant="primary">Contact us</NavbarButton>
+            </Link>
           </div>
         </NavBody>
 
@@ -79,13 +82,16 @@ export function HomeNavbar() {
               >
                 <ThemeToggle />
               </NavbarButton>
-              <NavbarButton
-                onClick={() => setIsMobileMenuOpen(false)}
-                variant="primary"
-                className="w-full"
-              >
-                Book a call
-              </NavbarButton>
+
+              <Link href="#contact">
+                <NavbarButton
+                  onClick={() => setIsMobileMenuOpen(false)}
+                  variant="primary"
+                  className="w-full"
+                >
+                  Contact us
+                </NavbarButton>
+              </Link>
             </div>
           </MobileNavMenu>
         </MobileNav>
