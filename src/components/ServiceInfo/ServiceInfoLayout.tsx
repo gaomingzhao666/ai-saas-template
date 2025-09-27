@@ -21,7 +21,7 @@ const serviceInfos = [
 
 export function ServiceInfoLayout() {
   return (
-    <div className="mx-auto w-full max-w-6xl px-4">
+    <div className="mx-auto w-full max-w-6xl">
       <h2 className="text-2xl font-semibold">Our Services</h2>
       <div className="container my-12 grid gap-8 md:grid-cols-3">
         {serviceInfos.map((info, index) => (

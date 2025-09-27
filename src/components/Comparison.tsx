@@ -8,7 +8,7 @@ export function Comparison() {
       secondImage="https://assets.aceternity.com/code-solution.png"
       firstImageClassName="object-cover object-left-top"
       secondImageClassname="object-cover object-left-top"
-      className="h-[32rem] w-full md:w-[64rem] md:h-[32rem] mx-auto"
+      className="h-[32rem] w-full md:w-6xl mx-auto"
       slideMode="hover"
     />
   );
