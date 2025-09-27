@@ -6,6 +6,7 @@ import {
   useMotionValueEvent,
   useScroll,
 } from "motion/react";
+import Link from "next/link";
 import React, { useRef, useState } from "react";
 import { cn } from "@/lib/utils";
 
@@ -274,13 +275,14 @@ export const NavbarButton = ({
       "bg-gradient-to-b from-blue-500 to-blue-700 text-white shadow-[0px_2px_0px_0px_rgba(255,255,255,0.3)_inset]",
   };
 
+  const Component = Tag;
   return (
-    <Tag
-      href={href || undefined}
+    <Component
+      href={href}
       className={cn(baseStyles, variantStyles[variant], className)}
       {...props}
     >
       {children}
-    </Tag>
+    </Component>
   );
 };
