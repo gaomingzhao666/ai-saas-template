@@ -1,3 +1,4 @@
+import { CompanyInfoLayout } from "@/components/CompanyInfo/CompanyInfoLayout";
 import { Comparison } from "@/components/Comparison";
 import { Footer } from "@/components/Footer";
 import { HeroScroll } from "@/components/Hero";
@@ -18,8 +19,7 @@ const Home = () => (
     <ProjectInfoLayout />
 
     <Members />
-
-    <div className="fixed bottom-2 right-2">AI ChatBot</div>
+    <CompanyInfoLayout />
 
     <Footer />
   </>

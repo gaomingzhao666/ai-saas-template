@@ -4,16 +4,18 @@ export interface CompanyInfo {
   title: string;
   content: string;
 }
-export function CompanyInfoCard(props: { companyInfo: CompanyInfo }) {
+export function CompanyInfoCard(
+  props: CompanyInfo & {
+    className?: string;
+  },
+) {
   return (
-    <>
-      <Card>
-        <CardHeader>
-          <CardTitle>{props.companyInfo.title}</CardTitle>
-        </CardHeader>
+    <Card className={props.className}>
+      <CardHeader>
+        <CardTitle>{props.title}</CardTitle>
+      </CardHeader>
 
-        <CardContent>{props.companyInfo.content}</CardContent>
-      </Card>
-    </>
+      <CardContent>{props.content}</CardContent>
+    </Card>
   );
 }
