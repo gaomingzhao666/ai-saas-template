@@ -32,11 +32,11 @@ const Home = () => (
         },
       ]}
     />
+    <Comparison />
 
     <Members />
 
     <div className="fixed bottom-2 right-2">AI ChatBot</div>
-    <Comparison />
 
     <Footer />
   </>
