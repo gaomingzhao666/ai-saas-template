@@ -15,13 +15,13 @@ const companyInfos: CompanyInfo[] = [
       "To be a global leader in AI technology, empowering organizations to achieve their full potential through intelligent automation and data-driven insights.",
   },
   {
-    title: "Our Values",
-    content: "300",
-  },
-  {
     title: "Our Team",
     content:
       "A diverse group of passionate professionals dedicated to pushing the boundaries of AI technology and delivering exceptional value to our clients.",
+  },
+  {
+    title: "Our Values",
+    content: "300",
   },
   {
     title: "Our History",
