@@ -13,13 +13,15 @@ const Home = () => (
       <HomeNavbar />
     </header>
 
-    <HeroScroll />
-    <ServiceInfoLayout />
-    <Comparison />
-    <ProjectInfoLayout />
+    <main className="min-h-screen px-4">
+      <HeroScroll />
+      <ServiceInfoLayout />
+      <Comparison />
+      <ProjectInfoLayout />
 
-    <Members />
-    <CompanyInfoLayout />
+      <Members />
+      <CompanyInfoLayout />
+    </main>
 
     <Footer />
   </>
